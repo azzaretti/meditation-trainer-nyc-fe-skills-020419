@@ -1,0 +1,54 @@
+div {
+  font-family: 'Muli';
+  font-size: auto;
+  margin: auto;
+}
+
+#button {
+  color: black;
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 8px 8px 5px black;
+}
+
+#wrapper {
+  background-color: ivory;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 100px 300px 100px;
+  grid-auto-columns: 20% 20% 20% 20% 20%;
+  grid-template-areas:
+  "title title title title title"
+  "log button button instructions instructions"
+  "stats stats stats stats stats"
+}
+
+#title {
+  grid-area: title;
+  font-size: 4em;
+}
+
+#button-wrap {
+  grid-area: button;
+}
+
+#breathlog {
+  grid-area: log;
+}
+
+#stat-bar{
+  grid-area: stats;
+}
+
+#instructions{
+  grid-area: instructions;
+  border:3px solid black;
+  width: 350px;
+  height: auto;
+}
